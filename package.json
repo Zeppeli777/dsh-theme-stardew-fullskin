@@ -29,11 +29,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zeppeli777/dsh-stardew-skin.git"
+    "url": "git+https://github.com/Zeppeli777/dsh-theme-stardew-fullskin.git"
   },
-  "homepage": "https://github.com/Zeppeli777/dsh-stardew-skin/tree/fullskin#readme",
+  "homepage": "https://github.com/Zeppeli777/dsh-theme-stardew-fullskin#readme",
   "bugs": {
-    "url": "https://github.com/Zeppeli777/dsh-stardew-skin/issues"
+    "url": "https://github.com/Zeppeli777/dsh-theme-stardew-fullskin/issues"
   },
   "dsh": {
     "bundle": {
