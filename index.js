@@ -56,13 +56,14 @@ function hostAnchors(ctx) {
       anchors.push(value)
     }
   }
+  // Prefer the running installation's own entry. The shared profile fallback
+  // may belong to a different dsh CLI/desktop installation and version.
+  push(process.argv[1])
   // Loader writes the profile directory onto the root context; forked plugin
   // contexts read it through the prototype chain.
   push(ctx.baseUrl)
   const loader = typeof ctx.get === 'function' ? ctx.get('loader') : undefined
   push(loader?.config?.baseUrl)
-  // The dsh CLI entry file: inside the dsh installation tree on npm installs.
-  push(process.argv[1])
   return anchors
 }
 

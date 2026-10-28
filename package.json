@@ -1,6 +1,6 @@
 {
   "name": "dsh-theme-stardew-fullskin",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Stardew Valley theme for the DeepSeek Harness Web UI: a self-contained frontend that replaces the served dist, with the Junimo NPC dialog, farm-select mode picker, quest journal HUD, valley calendar with seasons and weather, 8-bit sound feedback, and wallpaper system.",
   "type": "module",
   "main": "index.js",
@@ -41,6 +41,6 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-web-app": "^0.1.2-rc.1 || ^0.1.5-rc.1 || ^0.1.7-rc.2 || ^0.2.1-rc.3"
+    "@deepseek-ai/dsh-web-app": "^0.1.2-rc.1 || ^0.1.5-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1 || ^0.2.1-rc.3"
   }
 }

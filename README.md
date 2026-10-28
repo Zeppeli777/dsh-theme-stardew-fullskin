@@ -6,6 +6,8 @@
 
 > 🔀 本仓库是**完全替换版**（整皮）：整个前端换成星露谷界面。想要只换配色、保留官方 React UI 的**组件替换版**，请用 [`dsh-theme-stardew-valley`](https://github.com/Zeppeli777/dsh-stardew-skin)（原仓库 `main` 分支）。
 
+> ⚠️ 仅支持 `dsh web` 浏览器界面，不支持桌面原生窗口；暂不兼容其他会改变 UI 的插件。卸载即可恢复官方界面，步骤见下文。
+
 ![标题屏](screenshots/title.png)
 
 ![主界面（0.2.1 实测）](screenshots/main-021.png)
@@ -83,12 +85,16 @@ npm run dev -- --port 8080
 直接编辑 `web/index.html`（HTML+CSS+JS 单文件，无构建步骤），重启 `dsh web` 生效。
 素材加工脚本在 `scripts/`（`transform.py` 为一次性改皮脚本，`gen_pets.py` 生成桌宠页，`dev-server.mjs` 为预览服务器）。
 
-## 卸载
+## 恢复官方界面 / 卸载
+
+先停止正在运行的 `dsh web`（在对应终端按 `Ctrl+C`），再执行：
 
 ```
 dsh plugin --profile web remove dsh-theme-stardew-fullskin
-dsh web   # 重启后恢复官方 React 前端
+dsh web
 ```
+
+重新打开页面即可恢复官方界面；若仍显示旧皮肤，按 `Ctrl+F5` 强制刷新。
 
 浏览器端个性化数据（壁纸、音乐、音效开关、审批偏好、伙伴设定）存在 localStorage / IndexedDB，清除站点数据即可完全抹掉。
 
